@@ -1,16 +1,16 @@
 # AWS Session Manager with Secure access and logging
-## 📖 Overview
+## Overview
 
 Traditionally, managing private EC2 instances in AWS required SSH key pairs and bastion hosts. This often meant opening inbound ports such as SSH (22) or RDP (3389), which increased the attack surface and added operational overhead.
 
 Thus,AWS Systems Manager (SSM) Session Manager provides a secure, centralized way to manage both AWS and on-premises servers. With Session Manager, you can access your instances without bastion hosts, inbound ports, or SSH key management. It leverages the SSM Agent to establish secure, auditable sessions.
 
 
-## 📐 Architecture
+## Architecture
 ![alt text](assets/ssm-s3-diagram.png)
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - Terraform installed
 
