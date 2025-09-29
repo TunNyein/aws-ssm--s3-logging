@@ -18,10 +18,9 @@ Thus,AWS Systems Manager (SSM) Session Manager provides a secure, centralized wa
 
 - Session Manager Plugin installed on your local machine:
   Install Session Manager Plugin
-
 ---
 
-## 🚀 Deployment Steps
+## Deployment Steps
 
 ### Clone Repository
 
