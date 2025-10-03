@@ -1,9 +1,17 @@
 # AWS Session Manager with Secure access and logging
 ## Overview
 
-Traditionally, managing private EC2 instances in AWS required SSH key pairs and bastion hosts. This often meant opening inbound ports such as SSH (22) or RDP (3389), which increased the attack surface and added operational overhead.
+Traditionally, managing private EC2 instances in AWS required SSH key pairs and bastion hosts. This approach meant opening inbound ports such as SSH (22) or RDP (3389), which not only increased the attack surface but also added operational overhead in managing keys and maintaining bastion hosts.
 
-Thus,AWS Systems Manager (SSM) Session Manager provides a secure, centralized way to manage both AWS and on-premises servers. With Session Manager, you can access your instances without bastion hosts, inbound ports, or SSH key management. It leverages the SSM Agent to establish secure, auditable sessions.
+AWS Systems Manager (SSM) Session Manager provides a secure, centralized way to manage nodes on both AWS and on-premises servers. With Session Manager, you can access your instances without bastion hosts, inbound ports, or SSH key management. Session Manager uses the SSM Agent on each instance to establish a secure channel.
+
+**In this project**, I will demonstrate how to set up AWS SSM to:
+
+- Securely connect to private EC2 instances.
+
+- Automatically store session logs in an aws S3 bucket for debugging and auditing.
+
+**Project Goal** : The EC2 instance running in a private subnet will be managed using Session Manager. And then, all session activity logs will be automatically stored in S3 bucket, ensuring auditing and accountability by tracking who accessed the instance and when.
 
 
 ## Architecture
